@@ -1,12 +1,19 @@
 import React from 'react';
-import { Button } from 'reactstrap';
+import { Button, Container, Row, Col, Card, CardImg,CardTitle, CardBody, CardSubtitle, CardText } from 'reactstrap';
 
 function CartPage() {
     return (
-        <div>
-            <p>This is the cartPage</p>
-            <Button>Add Item</Button>
-        </div>
+        <Container>
+            <h1 className="display-3 photowall-title">PhotoWall</h1>
+            <Row>
+            <Col xs="4">
+                Area de Formulario
+            </Col>
+            <Col xs="8">
+                Lista de Photos
+            </Col>
+            </Row>
+        </Container>
     );
 }
 
