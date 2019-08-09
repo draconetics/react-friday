@@ -12,7 +12,7 @@ class CartPage extends React.Component {
             photoList:photoList
         }
 
-
+        this.deletePhoto = this.deletePhoto.bind(this);
     }
 
     addPhoto(photoObject){
@@ -24,8 +24,14 @@ class CartPage extends React.Component {
         });
     }
 
+    deletePhoto(index){
+        this.setState({
+            photoList: this.state.photoList.filter(item=>item.id !== index)
+        });
+    }
+
     render() {
-        const PhotoList = this.state.photoList.map((photo, i)=><Cart info={photo} key={i}/>);
+        const PhotoList = this.state.photoList.map((photo, i)=><Cart info={photo} key={i} delete={this.deletePhoto.bind(this)}/>);
         return (
             <Container>
                 <h1 className="display-3 photowall-title">PhotoWall</h1>

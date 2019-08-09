@@ -2,7 +2,7 @@ import React from 'react';
 import {Card, Col, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button} from 'reactstrap';
 
 function CardInfo(props) {
-    let {url, detail, key} = props.info;
+    let {url, detail, key,id} = props.info;
     return (
         <Col sm="4" className="mt-1" key={key}>
         <Card>
@@ -11,7 +11,7 @@ function CardInfo(props) {
             <CardTitle>Card title</CardTitle>
             <CardSubtitle>Card subtitle</CardSubtitle>
             <CardText>{detail}</CardText>
-            <Button>Button</Button>
+            <Button onClick={props.delete(id)}>Delete</Button>
             </CardBody>
         </Card>
         </Col>

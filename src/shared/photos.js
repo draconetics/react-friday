@@ -1,17 +1,21 @@
 export const photoList = [
     {
+        id: 1,
         url: 'https://raddevon.com/wp-content/uploads/2018/10/react.jpg',
         detail: 'Logo de React fondo negro'
     },
     {
+        id:2,
         url: 'https://cdn.evilmartians.com/front/posts/optimizing-react-virtual-dom-explained/cover-a1d5b40.png',
         detail: 'React virtual'
     },
     {
+        id:3,
         url: 'https://raddevon.com/wp-content/uploads/2018/10/react.jpg',
         detail: 'React con fondo de lupa.'
     },
     {
+        id:4,
         url: 'https://raddevon.com/wp-content/uploads/2018/10/react.jpg',
         detail: 'React con fondo de lupa.'
     }
