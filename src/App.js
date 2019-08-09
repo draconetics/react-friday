@@ -14,7 +14,6 @@ function App() {
   return (
     <div className="App">
         <BrowserRouter>
-          <h1>My Shopping Cart</h1>
           <Navigation/>
           <List/>
           <Router/>
