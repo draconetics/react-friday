@@ -1,4 +1,4 @@
-export default photoList = [
+export const photoList = [
     {
         url: 'https://raddevon.com/wp-content/uploads/2018/10/react.jpg',
         detail: 'Logo de React fondo negro'
